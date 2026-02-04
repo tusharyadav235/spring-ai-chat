@@ -299,7 +299,7 @@ function App() {
                   });
 
                   return Object.entries(sessions).map(([sessId, msgs]) => {
-                    const firstMessage = msgs[0];
+                    
                     const lastMessage = msgs[msgs.length - 1];
                     const messageCount = msgs.length;
                     const preview = msgs.find(m => m.role === 'user')?.content || 'Chat session';
